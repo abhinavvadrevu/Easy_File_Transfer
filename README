@@ -1,0 +1,23 @@
+Easy File Transfer
+
+This project allows the user to transfer files to friends connected to the same network. It was created because I often found myself wanting to transfer small files like word documents to friends sitting next to me.  I rarely carry a thumbdrive on me, so in order to avoid the pain of opening up gmail every time I want to send a file to a friend, I created this little app.
+
+This app has a folder called My_Docs which acts a virtual thumbdrive.  Every time the server is started, a tinyurl is created so the user can easily tell his friends where to navigate to.  The friends can see all the files currently in the My_Docs folder, and can both download and upload to it.
+
+This app is better than using a thumbdrive or gmail for the following reasons:
+- it is safer than a thumbdrive since users cannot edit or delete the files in My_Docs, unlike with a thumbdrive, so the user will not lose work
+- There are no file size limits
+- I need not remember to bring a thumbdrive around with me
+- it is faster than gmail
+- gmail doesn't allow transfer of executables, which can be done here
+- gmail also involves a lengthy upload process which is eliminated here
+
+This project uses Tornado.
+Find out more here:
+http://www.tornadoweb.org/
+
+
+For more on Abhinav Vadrevu and his projects, visit his website at:
+http://abhinavvadrevu.com/
+or GitHub at
+https://github.com/abhinavvadrevu

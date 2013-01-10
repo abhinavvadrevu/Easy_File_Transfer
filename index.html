@@ -1,0 +1,35 @@
+<html>
+    <body style="background-color:DDDDDD;">
+        <h3>
+            Thanks for using Abhinav's server to download your files.
+            <br />
+            For more, visit Abhinav's <a href="http://www.abhinavvadrevu.com">website</a> or <a href="http://www.github.com/abhinavvadrevu">GitHub</a>
+        </h3>
+
+        <div style="background-color:#CCCCFF">
+            <p />
+            Upload files to Abhinav's computer here:
+            <p />
+
+            <form enctype="multipart/form-data" action="/upload" method="post">
+                File: <input type="file" name="file1" />
+                <br />
+                <input type="submit" value="Upload" />
+            </form>
+        </div>
+        <div style="background-color:#FFCCCC">
+            <p />
+
+            The following files are available on Abhinav's computer and are  ready for download:
+            <p />
+
+            {% for x in filelist %}
+                <a href="static/{{escape(x)}}">{{escape(x)}}</a>
+                <br />
+            {% end %}
+        </div>
+
+
+    </body>
+
+</html>
